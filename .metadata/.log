@@ -1,0 +1,355 @@
+!SESSION 2016-11-14 12:42:27.924 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2016-11-14 12:43:31.787
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: dev.eclipse.org: Name or service not known. ; version: 2.0.3.v20160905-1331
+!STACK 0
+java.net.UnknownHostException: dev.eclipse.org: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:103)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-11-14 12:57:14.242
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2016-11-14 12:57:14.242
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 12:57:14.242
+!MESSAGE Eclipse Git Team Provider will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 12:57:14.243
+!MESSAGE Eclipse Git Team Provider - Task focused interface will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 12:57:14.243
+!MESSAGE Java implementation of Git will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-11-14 12:57:14.243
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.243
+!MESSAGE Software being installed: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.243
+!MESSAGE Software currently installed: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 12:57:14.243
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.243
+!MESSAGE Git Team Provider UI 4.4.0.201606070830-r (org.eclipse.egit.ui 4.4.0.201606070830-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.243
+!MESSAGE Git Team Provider UI 4.4.1.201607150455-r (org.eclipse.egit.ui 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.243
+!MESSAGE Git Team Provider UI 4.5.0.201609210915-r (org.eclipse.egit.ui 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 12:57:14.243
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.243
+!MESSAGE From: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.243
+!MESSAGE To: org.eclipse.egit.ui [4.4.1.201607150455-r]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 12:57:14.243
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.243
+!MESSAGE From: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.243
+!MESSAGE To: bundle org.eclipse.egit.ui [4.5.0,4.6.0)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-11-14 12:57:14.316
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2016-11-14 12:57:14.317
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 12:57:14.317
+!MESSAGE Eclipse Git Team Provider will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 12:57:14.317
+!MESSAGE Eclipse Git Team Provider - Task focused interface will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 12:57:14.317
+!MESSAGE Java implementation of Git will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-11-14 12:57:14.317
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.317
+!MESSAGE Software being installed: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.317
+!MESSAGE Software currently installed: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 12:57:14.317
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.317
+!MESSAGE Git Team Provider UI 4.4.0.201606070830-r (org.eclipse.egit.ui 4.4.0.201606070830-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.317
+!MESSAGE Git Team Provider UI 4.4.1.201607150455-r (org.eclipse.egit.ui 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.317
+!MESSAGE Git Team Provider UI 4.5.0.201609210915-r (org.eclipse.egit.ui 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 12:57:14.317
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.317
+!MESSAGE From: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.317
+!MESSAGE To: org.eclipse.egit.ui [4.4.1.201607150455-r]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 12:57:14.317
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.317
+!MESSAGE From: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.317
+!MESSAGE To: bundle org.eclipse.egit.ui [4.5.0,4.6.0)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-11-14 12:57:14.334
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2016-11-14 12:57:14.334
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 12:57:14.334
+!MESSAGE Eclipse Git Team Provider will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 12:57:14.334
+!MESSAGE Eclipse Git Team Provider - Task focused interface will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 12:57:14.334
+!MESSAGE Java implementation of Git will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-11-14 12:57:14.334
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.334
+!MESSAGE Software being installed: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.334
+!MESSAGE Software currently installed: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 12:57:14.334
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.334
+!MESSAGE Git Team Provider UI 4.4.0.201606070830-r (org.eclipse.egit.ui 4.4.0.201606070830-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.334
+!MESSAGE Git Team Provider UI 4.4.1.201607150455-r (org.eclipse.egit.ui 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.334
+!MESSAGE Git Team Provider UI 4.5.0.201609210915-r (org.eclipse.egit.ui 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 12:57:14.335
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.335
+!MESSAGE From: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.335
+!MESSAGE To: org.eclipse.egit.ui [4.4.1.201607150455-r]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 12:57:14.335
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.335
+!MESSAGE From: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.335
+!MESSAGE To: bundle org.eclipse.egit.ui [4.5.0,4.6.0)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-11-14 12:57:14.335
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2016-11-14 12:57:14.335
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 12:57:14.335
+!MESSAGE Eclipse Git Team Provider will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 12:57:14.335
+!MESSAGE Eclipse Git Team Provider - Task focused interface will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 12:57:14.335
+!MESSAGE Java implementation of Git will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-11-14 12:57:14.335
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.336
+!MESSAGE Software being installed: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.336
+!MESSAGE Software currently installed: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 12:57:14.336
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.336
+!MESSAGE Git Team Provider UI 4.4.0.201606070830-r (org.eclipse.egit.ui 4.4.0.201606070830-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.336
+!MESSAGE Git Team Provider UI 4.4.1.201607150455-r (org.eclipse.egit.ui 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.336
+!MESSAGE Git Team Provider UI 4.5.0.201609210915-r (org.eclipse.egit.ui 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 12:57:14.336
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.336
+!MESSAGE From: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.336
+!MESSAGE To: org.eclipse.egit.ui [4.4.1.201607150455-r]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 12:57:14.336
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.336
+!MESSAGE From: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 12:57:14.336
+!MESSAGE To: bundle org.eclipse.egit.ui [4.5.0,4.6.0)
+!SESSION 2016-11-14 12:58:12.119 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-11-14 13:00:30.963
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2016-11-14 13:00:30.963
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 13:00:30.964
+!MESSAGE Eclipse Git Team Provider will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 13:00:30.964
+!MESSAGE Eclipse Git Team Provider - Task focused interface will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 13:00:30.964
+!MESSAGE Java implementation of Git will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-11-14 13:00:30.964
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.964
+!MESSAGE Software being installed: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.964
+!MESSAGE Software currently installed: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 13:00:30.964
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.964
+!MESSAGE Git Team Provider UI 4.4.0.201606070830-r (org.eclipse.egit.ui 4.4.0.201606070830-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.964
+!MESSAGE Git Team Provider UI 4.4.1.201607150455-r (org.eclipse.egit.ui 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.964
+!MESSAGE Git Team Provider UI 4.5.0.201609210915-r (org.eclipse.egit.ui 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 13:00:30.964
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.964
+!MESSAGE From: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.964
+!MESSAGE To: org.eclipse.egit.ui [4.4.1.201607150455-r]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 13:00:30.964
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.964
+!MESSAGE From: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.964
+!MESSAGE To: bundle org.eclipse.egit.ui [4.5.0,4.6.0)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-11-14 13:00:30.990
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2016-11-14 13:00:30.990
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 13:00:30.990
+!MESSAGE Eclipse Git Team Provider will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 13:00:30.991
+!MESSAGE Eclipse Git Team Provider - Task focused interface will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 13:00:30.991
+!MESSAGE Java implementation of Git will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-11-14 13:00:30.991
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.991
+!MESSAGE Software being installed: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.991
+!MESSAGE Software currently installed: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 13:00:30.991
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.991
+!MESSAGE Git Team Provider UI 4.4.0.201606070830-r (org.eclipse.egit.ui 4.4.0.201606070830-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.991
+!MESSAGE Git Team Provider UI 4.4.1.201607150455-r (org.eclipse.egit.ui 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.991
+!MESSAGE Git Team Provider UI 4.5.0.201609210915-r (org.eclipse.egit.ui 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 13:00:30.991
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.991
+!MESSAGE From: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.991
+!MESSAGE To: org.eclipse.egit.ui [4.4.1.201607150455-r]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 13:00:30.991
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.991
+!MESSAGE From: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:30.991
+!MESSAGE To: bundle org.eclipse.egit.ui [4.5.0,4.6.0)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-11-14 13:00:31.010
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2016-11-14 13:00:31.010
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 13:00:31.010
+!MESSAGE Eclipse Git Team Provider will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 13:00:31.010
+!MESSAGE Eclipse Git Team Provider - Task focused interface will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 13:00:31.010
+!MESSAGE Java implementation of Git will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-11-14 13:00:31.010
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.010
+!MESSAGE Software being installed: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.010
+!MESSAGE Software currently installed: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 13:00:31.011
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.011
+!MESSAGE Git Team Provider UI 4.4.0.201606070830-r (org.eclipse.egit.ui 4.4.0.201606070830-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.011
+!MESSAGE Git Team Provider UI 4.4.1.201607150455-r (org.eclipse.egit.ui 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.011
+!MESSAGE Git Team Provider UI 4.5.0.201609210915-r (org.eclipse.egit.ui 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 13:00:31.011
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.011
+!MESSAGE From: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.011
+!MESSAGE To: org.eclipse.egit.ui [4.4.1.201607150455-r]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 13:00:31.011
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.011
+!MESSAGE From: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.011
+!MESSAGE To: bundle org.eclipse.egit.ui [4.5.0,4.6.0)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2016-11-14 13:00:31.012
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2016-11-14 13:00:31.012
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 13:00:31.012
+!MESSAGE Eclipse Git Team Provider will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 13:00:31.012
+!MESSAGE Eclipse Git Team Provider - Task focused interface will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10013 2016-11-14 13:00:31.012
+!MESSAGE Java implementation of Git will be ignored because it is already installed, and updates are not permitted.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2016-11-14 13:00:31.012
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.012
+!MESSAGE Software being installed: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.012
+!MESSAGE Software currently installed: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 13:00:31.012
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.012
+!MESSAGE Git Team Provider UI 4.4.0.201606070830-r (org.eclipse.egit.ui 4.4.0.201606070830-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.012
+!MESSAGE Git Team Provider UI 4.4.1.201607150455-r (org.eclipse.egit.ui 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.012
+!MESSAGE Git Team Provider UI 4.5.0.201609210915-r (org.eclipse.egit.ui 4.5.0.201609210915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 13:00:31.012
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.012
+!MESSAGE From: Eclipse Git Team Provider 4.4.1.201607150455-r (org.eclipse.egit.feature.group 4.4.1.201607150455-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.012
+!MESSAGE To: org.eclipse.egit.ui [4.4.1.201607150455-r]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-11-14 13:00:31.012
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.012
+!MESSAGE From: Git Team Provider - auto-import for Eclipse >= 4.6 4.5.0.201609210915-r (org.eclipse.egit.ui.smartimport 4.5.0.201609210915-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-11-14 13:00:31.012
+!MESSAGE To: bundle org.eclipse.egit.ui [4.5.0,4.6.0)
+!SESSION 2016-11-14 13:02:37.615 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data file:/home/quantum/SecurityATM/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 10 2016-11-14 13:19:03.073
+!MESSAGE Updating the index from remote ‘https://www.eclipse.org/downloads/download.php?r=1&file=/technology/epp/logging/problems.zip’ failed with exception: java.io.EOFException: Unexpected end of ZLIB input stream ; version: 2.0.3.v20160905-1331
+!STACK 0
+org.eclipse.epp.logging.aeri.core.util.Logs$LogTraceException
+	at org.eclipse.epp.logging.aeri.core.util.Logs$LogTraceException.newTrace(Logs.java:387)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerProblemsHistory$UpdateIndexJob.run(ServerProblemsHistory.java:319)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
