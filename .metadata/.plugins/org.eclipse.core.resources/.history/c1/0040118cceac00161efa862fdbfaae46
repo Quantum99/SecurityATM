@@ -1,0 +1,67 @@
+package view;
+
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class ATMClient extends JFrame implements ActionListener{
+
+	JLabel wel, cnum, pin;
+	JTextField cnumtext, pintext, result;
+	JButton send;
+	JPanel pn1, pn2, pn3, pn4;
+	
+	public ATMClient() {
+	// TODO Auto-generated constructor stub
+		super("ATM Prompt");
+		
+		setLayout(new GridLayout(5,1));
+		initializeComponents();
+		addComponentsToPanels();
+		addPanelsToWindow();
+		registerListeners();
+		setWindowProperties();
+	}
+	
+	public void initializeComponents(){
+		wel = new JLabel("Welcome");
+		cnum = new JLabel("Card Number");
+		pin = new JLabel("PIN");
+		
+		cnumtext = new JTextField();
+		pintext = new JTextField();
+		result = new JTextField();
+		
+		send = new JButton("Send");
+		
+		
+	}
+	
+	public void addComponentsToPanels(){}
+	
+	public void addPanelsToWindow(){}
+	
+	public void registerListeners(){}
+	
+	public void setWindowProperties(){
+		this.setSize(350,105);
+		this.setVisible(true);
+		this.setLocationRelativeTo(null);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setResizable(false);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

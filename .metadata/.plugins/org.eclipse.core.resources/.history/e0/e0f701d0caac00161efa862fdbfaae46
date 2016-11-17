@@ -1,0 +1,33 @@
+package view;
+
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class ATMview extends JFrame implements ActionListener{
+
+	JLabel wel, cnum, pin;
+	JTextField cnumtext, pintext;
+	JButton send;
+	
+	public ATMview() {
+	// TODO Auto-generated constructor stub
+		super("ATM Prompt");
+		
+		setLayout(new GridLayout(5,1));
+		
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

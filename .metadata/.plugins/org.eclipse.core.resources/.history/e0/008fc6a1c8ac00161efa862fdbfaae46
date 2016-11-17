@@ -1,0 +1,10 @@
+package view;
+
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+public class ATMview extends JFrame implements ActionListener{
+	
+
+}

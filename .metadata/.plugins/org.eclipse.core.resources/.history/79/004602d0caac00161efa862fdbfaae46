@@ -1,0 +1,59 @@
+package view;
+
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class ATMview extends JFrame implements ActionListener{
+
+	JLabel wel, cnum, pin;
+	JTextField cnumtext, pintext;
+	JButton send;
+	
+	public ATMview() {
+	// TODO Auto-generated constructor stub
+		super("ATM Prompt");
+		
+		setLayout(new GridLayout(5,1));
+		initializeComponents();
+		addComponentsToPanels();
+		addPanelsToWindow();
+		registerListeners();
+		setWindowProperties();
+	}
+	
+	public void initializeComponents(){
+		wel = new JLabel("Welcome");
+		cnum = new JLabel("Card Number");
+		pin = new JLabel("PIN");
+		
+		cu
+	}
+	
+	public void addComponentsToPanels(){}
+	
+	public void addPanelsToWindow(){}
+	
+	public void registerListeners(){}
+	
+	public void setWindowProperties(){
+		this.setSize(350,105);
+		this.setVisible(true);
+		this.setLocationRelativeTo(null);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setResizable(false);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}
