@@ -1,0 +1,28 @@
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class ATMServer {
+	private ServerSocket serverSocket;
+	private Socket socket;
+	
+	public ATMServer() {
+		// TODO Auto-generated constructor stub
+		try {
+			serverSocket = new ServerSocket(555);
+			while(true){
+				socket = serverSocket.accept();
+				new Thread(new ThreadedClass(socket)).start();
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new ATMServer();
+	}
+
+}
