@@ -4,14 +4,14 @@
 		<item value="200" key="DetailsSashWeight"/>
 		<item value="420" key="NameColumnWidth"/>
 		<item value="140" key="VersionColumnWidth"/>
-		<item value="342" key="IDColumnWidth"/>
+		<item value="386" key="IDColumnWidth"/>
 		<item value="800" key="ListSashWeight"/>
 	</section>
 	<section name="AvailableIUsPage">
 		<item value="1" key="AvailableViewType"/>
 		<item value="800" key="AvailableListSashWeight"/>
 		<item value="true" key="HideInstalledContent"/>
-		<item value="377" key="AvailableVersionColumnWidth"/>
+		<item value="421" key="AvailableVersionColumnWidth"/>
 		<item value="true" key="ShowLatestVersionsOnly"/>
 		<item value="200" key="AvailableDetailsSashWeight"/>
 		<item value="true" key="ResolveInstallWithAllSites"/>
@@ -22,14 +22,14 @@
 		<item value="200" key="DetailsSashWeight"/>
 		<item value="400" key="NameColumnWidth"/>
 		<item value="200" key="VersionColumnWidth"/>
-		<item value="302" key="IDColumnWidth"/>
+		<item value="346" key="IDColumnWidth"/>
 		<item value="800" key="ListSashWeight"/>
 	</section>
 	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.InstallWizard.WizardSettings">
-		<item value="927" key="DIALOG_WIDTH"/>
-		<item value="1|FontAwesome|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="766" key="DIALOG_HEIGHT"/>
-		<item value="215" key="DIALOG_X_ORIGIN"/>
-		<item value="-14" key="DIALOG_Y_ORIGIN"/>
+		<item value="926" key="DIALOG_WIDTH"/>
+		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="719" key="DIALOG_HEIGHT"/>
+		<item value="19" key="DIALOG_X_ORIGIN"/>
+		<item value="13" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

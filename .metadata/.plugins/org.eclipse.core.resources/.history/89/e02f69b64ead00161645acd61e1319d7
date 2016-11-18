@@ -16,7 +16,7 @@ public class ThreadedClass implements Runnable {
 	}
 	
 	@Override
-	public void run() {
+	private void run() {
 		// TODO Auto-generated method stub
 		int cardnumber, pin;
 		try {
@@ -36,6 +36,7 @@ public class ThreadedClass implements Runnable {
 			// TODO Auto-generated catch block
 			ex.printStackTrace();
 		}
+		
 
 	}
 	

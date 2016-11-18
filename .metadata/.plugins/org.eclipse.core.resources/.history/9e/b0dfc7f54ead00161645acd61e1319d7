@@ -30,7 +30,7 @@ public class ATMClient extends JFrame implements ActionListener{
 		super("ATM Prompt");
 		
 		try {
-			socket = new Socket("localhost", 8000);
+			socket = new Socket("localhost", 555);
 		} 
 		catch (IOException e) {
 			// TODO Auto-generated catch block

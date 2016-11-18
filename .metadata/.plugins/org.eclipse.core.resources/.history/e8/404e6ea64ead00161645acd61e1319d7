@@ -9,7 +9,7 @@ public class ATMServer {
 	public ATMServer() {
 		// TODO Auto-generated constructor stub
 		try {
-			serverSocket = new ServerSocket(8000);
+			serverSocket = new ServerSocket(555);
 			while(true){
 				socket = serverSocket.accept();
 				new Thread(new ThreadedClass(socket)).start();
