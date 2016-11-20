@@ -106,9 +106,7 @@ public class ATMClient extends JFrame implements ActionListener{
 		// TODO Auto-generated method stub
 		if(event.getSource().equals(send)){
 			try {
-				final String secretKey = "ssshhhhhhhhhhh!!!!";
-				AES en = new AES();
-				String encard = en.encrypt(cnumtext.getText(), secretKey)
+				
 			} catch (Exception e) {
 				// TODO: handle exception
 			}
