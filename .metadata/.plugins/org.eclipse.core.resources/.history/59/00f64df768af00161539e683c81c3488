@@ -112,12 +112,8 @@ public class ATMClient extends JFrame implements ActionListener{
 				os.writeObject(en.encrypt(cnumtext.getText(), secretKey));
 				os.writeObject(en.encrypt(pintext.getText(), secretKey));
 				response.setText(is.readObject().toString());
-			}catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			} catch (Exception e) {
+				// TODO: handle exception
 			}
 		}
 	}

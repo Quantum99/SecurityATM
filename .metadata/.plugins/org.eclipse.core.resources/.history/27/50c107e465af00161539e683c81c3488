@@ -18,9 +18,9 @@ import javax.swing.JTextField;
 public class ATMClient extends JFrame implements ActionListener{
 
 	JLabel wel, cnum, pin;
-	JTextField cnumtext, pintext, response;
+	JTextField cnumtext, pintext, result;
 	JButton send;
-	JPanel pn1, pn2, pn3, pn4, pn5;
+	JPanel pn1, pn2, pn3, pn4;
 	private Socket socket;
 	private ObjectOutputStream os;
 	private ObjectInputStream is;
@@ -62,7 +62,7 @@ public class ATMClient extends JFrame implements ActionListener{
 		
 		cnumtext = new JTextField();
 		pintext = new JTextField();
-		response = new JTextField();
+		result = new JTextField();
 		
 		send = new JButton("Send");
 		
@@ -70,7 +70,7 @@ public class ATMClient extends JFrame implements ActionListener{
 		pn2 = new JPanel(new GridLayout(1, 2));
 		pn3 = new JPanel(new GridLayout(1, 2));
 		pn4 = new JPanel(new GridLayout(1, 2));
-		pn5 = new JPanel(new GridLayout(1, 2));
+		
 	}
 	
 	public void addComponentsToPanels(){
@@ -80,7 +80,6 @@ public class ATMClient extends JFrame implements ActionListener{
 		pn3.add(pin);
 		pn3.add(pintext);
 		pn4.add(send);
-		pn4.add(response);
 	}
 	
 	public void addPanelsToWindow(){
@@ -95,7 +94,7 @@ public class ATMClient extends JFrame implements ActionListener{
 	}
 	
 	public void setWindowProperties(){
-		this.setSize(150,105);
+		this.setSize(350,105);
 		this.setVisible(true);
 		this.setLocationRelativeTo(null);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -109,15 +108,9 @@ public class ATMClient extends JFrame implements ActionListener{
 			try {
 				final String secretKey = "ssshhhhhhhhhhh!!!!";
 				AES en = new AES();
-				os.writeObject(en.encrypt(cnumtext.getText(), secretKey));
-				os.writeObject(en.encrypt(pintext.getText(), secretKey));
-				response.setText(is.readObject().toString());
-			}catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				String encard = en.encrypt(cnumtext.getText(), secretKey)
+			} catch (Exception e) {
+				// TODO: handle exception
 			}
 		}
 	}

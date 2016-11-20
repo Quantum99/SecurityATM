@@ -16,4 +16,5 @@
 <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="java.net.ServerSocket"/>
+<fullyQualifiedTypeName name="AES"/>
 </qualifiedTypeNameHistroy>

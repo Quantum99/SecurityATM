@@ -95,7 +95,7 @@ public class ATMClient extends JFrame implements ActionListener{
 	}
 	
 	public void setWindowProperties(){
-		this.setSize(150,105);
+		this.setSize(350,105);
 		this.setVisible(true);
 		this.setLocationRelativeTo(null);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -112,12 +112,8 @@ public class ATMClient extends JFrame implements ActionListener{
 				os.writeObject(en.encrypt(cnumtext.getText(), secretKey));
 				os.writeObject(en.encrypt(pintext.getText(), secretKey));
 				response.setText(is.readObject().toString());
-			}catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			} catch (Exception e) {
+				// TODO: handle exception
 			}
 		}
 	}
